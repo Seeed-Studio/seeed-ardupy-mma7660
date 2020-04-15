@@ -10,20 +10,20 @@ You can get more information in here [Accelerometer_MMA7660](https://github.com/
 
 ## How to binding with ArduPy
 - Install [AIP](https://github.com/Seeed-Studio/ardupy-aip)
-- Build firmware with Seeed ArduPy MY9221
-```
-    aip install Seeed-Studio/seeed-ardupy-mma7660
-    aip build
+- Build firmware with Seeed ArduPy MMA7660
+```shell
+aip install Seeed-Studio/seeed-ardupy-mma7660
+aip build
 ```
 - Flash new firmware to you ArduPy board
-```
-    aip flash <path of the new firmware>
+```shell
+aip flash 
 ```
 For more examples of using AIP, please refer to [AIP](https://github.com/Seeed-Studio/ardupy-aip).
 
 ## Usage
 
-```
+```python
 from arduino import grove_3ada
 import time
 
@@ -44,44 +44,32 @@ while True:
 
 ## API Reference
 
-- **x**
+- **x** : Get X-axis value
+```python
+print(ada.x)
+```
 
-    Get X-axis value
-    ```
-    print(ada.x)
-    ```
+- **y** : Get Y-axis value
+```python
+print(ada.y)
+```
 
-- **y**
-
-    Get Y-axis value
-    ```
-    print(ada.y)
-    ```
-
-- **z**
-
-    Get Z-axis value
-    ```
-    print(ada.z)
-    ```
-- **x_acceleration**
-
-    Get X-axis acceleration
-    ```
-    print(ada.x_acceleration)
-    ```
-- **y_acceleration***
-
-    Get Y-axis acceleration
-    ```
-    print(ada.y_acceleration)
-    ```
-- **z_acceleration***
-
-    Get Z-axis acceleration
-    ```
-    print(ada.z_acceleration)
-    ```
+- **z** : Get Z-axis value
+```python
+print(ada.z)
+```
+- **x_acceleration** : Get X-axis acceleration
+ ```python
+print(ada.x_acceleration)
+```
+- **y_acceleration*** : Get Y-axis acceleration
+```python
+print(ada.y_acceleration)
+```
+- **z_acceleration*** : Get Z-axis acceleration
+```python
+print(ada.z_acceleration)
+```
 
 
 ----
@@ -100,4 +88,3 @@ we integrate resources to serve new era of innovation. Seeed also works with <br
 global distributors and partners to push open hardware movement.<br>
 
 
-[![Analytics](https://ga-beacon.appspot.com/UA-46589105-3/Grove_LED_Bar)](https://github.com/igrigorik/ga-beacon)
