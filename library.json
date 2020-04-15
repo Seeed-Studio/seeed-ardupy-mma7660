@@ -1,8 +1,8 @@
-"name": "Seeed ArduPy MMA7660",
-"version": "1.0.0",
-"repository":
 {
-    "type": "git",
-    "url": "https://github.com/seeed-studio/seeed-ardupy-mma7660.git"
+    "name": "Seeed ArduPy MMA7660",
+    "version": "1.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/seeed-studio/seeed-ardupy-mma7660.git"
+    }
 }
-
