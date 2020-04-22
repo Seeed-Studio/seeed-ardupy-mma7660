@@ -4,5 +4,9 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/seeed-studio/seeed-ardupy-mma7660.git"
-    }
+    },
+    "dependencies": [{
+        "name": "Seeed_Arduino_MMA7660",
+        "url": "https://github.com/Seeed-Studio/Accelerometer_MMA7660.git"
+    }]
 }
